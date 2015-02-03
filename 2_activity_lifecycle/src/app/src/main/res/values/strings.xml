@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ActivityLifecycleHW</string>
+    <string name="lifecycle_state_string">Lifecycle State:</string>
+    <string name="clock_time_string">Clock Time:</string>
+    <string name="onCreate_string">onCreate()</string>
+    <string name="onRestart_string">onRestart()</string>
+    <string name="onStart_string">onStart()</string>
+    <string name="onResume_string">onResume()</string>
+    <string name="onPause_string">onPause()</string>
+    <string name="onStop_string">onStop()</string>
+    <string name="onDestroy_string">onDestroy()</string>
+    <string name="default_clock_time_string">0</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

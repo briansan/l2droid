@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="75dp"
+    android:orientation="horizontal">
+
+    <RelativeLayout
+        android:layout_margin="10dp"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+        <TextView
+            android:id="@+id/title_label"
+            android:text="Calculus"
+            android:textSize="24sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+        </TextView>
+        <TextView
+            android:id="@+id/subject_label"
+            android:text="Math"
+            android:textSize="16sp"
+
+            android:layout_below="@+id/title_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true">
+        </TextView>
+
+        <TextView
+            android:id="@+id/grade_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="100%"
+            android:textSize="24sp">
+        </TextView>
+    </RelativeLayout>
+</RelativeLayout>

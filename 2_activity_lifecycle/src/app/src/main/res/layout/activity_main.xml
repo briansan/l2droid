@@ -1,0 +1,150 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.breadtech.activitylifecyclehw.MainActivity" >
+
+    <TextView
+        android:id="@+id/lifecycle_state_header_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="@string/lifecycle_state_string"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/clock_time_header_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/lifecycle_state_header_label"
+        android:text="@string/clock_time_string"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/onCreate_header_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/lifecycle_state_header_label"
+        android:layout_below="@+id/lifecycle_state_header_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/onCreate_string"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/onRestart_header_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/onCreate_header_label"
+        android:layout_below="@+id/onCreate_header_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/onRestart_string"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/onStart_header_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/onRestart_header_label"
+        android:layout_below="@+id/onRestart_header_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/onStart_string"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/onResume_header_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/onStart_header_label"
+        android:layout_below="@+id/onStart_header_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/onResume_string"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/onPause_header_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/onResume_header_label"
+        android:layout_below="@+id/onResume_header_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/onPause_string"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/onStop_header_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/onPause_header_label"
+        android:layout_below="@+id/onPause_header_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/onStop_string"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+
+    <TextView
+        android:id="@+id/onCreate_clock_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/clock_time_header_label"
+        android:layout_below="@+id/clock_time_header_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/default_clock_time_string"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/onRestart_clock_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/onCreate_clock_time_label"
+        android:layout_below="@+id/onCreate_clock_time_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/default_clock_time_string"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/onStart_clock_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/onRestart_clock_time_label"
+        android:layout_below="@+id/onRestart_clock_time_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/default_clock_time_string"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/onResume_clock_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/onStart_clock_time_label"
+        android:layout_below="@+id/onStart_clock_time_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/default_clock_time_string"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/onPause_clock_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/onResume_clock_time_label"
+        android:layout_below="@+id/onResume_clock_time_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/default_clock_time_string"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+
+    <TextView
+        android:id="@+id/onStop_clock_time_label"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/onPause_clock_time_label"
+        android:layout_below="@+id/onPause_clock_time_label"
+        android:layout_marginTop="20dp"
+        android:text="@string/default_clock_time_string"
+        android:textAppearance="?android:attr/textAppearanceSmall" />
+</RelativeLayout>

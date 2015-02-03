@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">ToastHW</string>
+    <string name="instruction_string">Click the button below to activate the toast.</string>
+    <string name="toast_button_string">toast</string>
+    <string name="action_settings">Settings</string>
+
+</resources>

@@ -1,0 +1,199 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.breadtech.breadgrader.ui.CourseInfoActivity">
+
+    <LinearLayout
+        android:id="@+id/top_bar"
+
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/tl"
+
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+
+            android:background="@drawable/ic_action_cancel"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+        </Button>
+
+        <Button
+            android:id="@+id/tm"
+
+            android:text="Assignment Info"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+
+            android:background="#000000"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/tr"
+
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+
+            android:background="@drawable/ic_action_accept"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+        </Button>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/view"
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="15dp"
+        android:layout_below="@+id/top_bar"
+        android:layout_above="@+id/bottom_bar">
+
+        <EditText
+            android:id="@+id/name_et"
+            android:hint="Name"
+            android:textSize="24dp"
+            android:inputType="textCapWords"
+
+            android:layout_margin="10dp"
+            android:layout_toLeftOf="@+id/index_et"
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/index_et"
+            android:hint="Index"
+            android:textSize="25dp"
+            android:inputType="numberDecimal"
+
+            android:layout_margin="10dp"
+            android:layout_alignParentRight="true"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/due_et"
+            android:hint="Due Date"
+            android:textSize="24dp"
+            android:inputType="date"
+
+            android:layout_margin="10dp"
+            android:layout_below="@id/name_et"
+            android:layout_centerHorizontal="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/rcv_et"
+            android:hint="Received"
+            android:textSize="24dp"
+            android:inputType="date"
+
+            android:layout_margin="10dp"
+            android:layout_below="@id/due_et"
+            android:layout_toLeftOf="@+id/grade_divider"
+            android:layout_alignParentLeft="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            android:id="@+id/grade_divider"
+            android:text="/"
+            android:textSize="40dp"
+            android:inputType="number"
+
+            android:layout_margin="10dp"
+            android:layout_below="@id/due_et"
+            android:layout_centerHorizontal="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/max_et"
+            android:hint="Max"
+            android:textSize="24dp"
+            android:inputType="number"
+
+            android:layout_margin="10dp"
+            android:layout_toRightOf="@id/grade_divider"
+            android:layout_below="@id/due_et"
+            android:layout_alignParentRight="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+        <EditText
+            android:id="@+id/notes_et"
+            android:hint="Notes"
+            android:textSize="24dp"
+            android:inputType="text"
+
+            android:layout_margin="10dp"
+            android:layout_below="@id/grade_divider"
+            android:layout_alignParentRight="true"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" />
+
+
+    </RelativeLayout>
+
+
+    <LinearLayout
+        android:id="@+id/bottom_bar"
+
+        android:background="#000000"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/bl"
+
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+
+            android:background="@drawable/ic_action_share"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+        </Button>
+
+        <Button
+            android:id="@+id/bm"
+
+            android:text="average info"
+            android:textAlignment="center"
+            android:textColor="#FFFFFF"
+            android:textSize="25sp"
+
+            android:background="#000000"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_gravity="center"/>
+
+        <Button
+            android:id="@+id/br"
+
+            android:textSize="25dp"
+            android:textColor="#FFFFFF"
+
+            android:background="@drawable/ic_action_discard"
+            android:layout_width="50dp"
+            android:layout_height="match_parent">
+        </Button>
+    </LinearLayout>
+
+
+</RelativeLayout>

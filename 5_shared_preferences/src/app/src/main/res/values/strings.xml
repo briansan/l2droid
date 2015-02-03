@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">SharedPreferences</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="symbol_edit_text_hint">Enter a stock symbol (ie GOOG)</string>
+    <string name="uri_query_label">The URI goes here</string>
+    <string name="get_quote_button">Get Quote</string>
+
+</resources>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">HTTPJSONEcho</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="server_addr_editText_hint">Server Address</string>
+    <string name="server_port_editText_hint">Port</string>
+    <string name="msg_editText_hint">Enter Message Here</string>
+
+    <string name="connect_button_text">Connect</string>
+    <string name="disconnect_button_text">Disconnect</string>
+
+    <string name="send_button_text">Send</string>
+    <string name="response_textView_text">Response:\n</string>
+
+
+</resources>

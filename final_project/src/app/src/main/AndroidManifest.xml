@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.breadtech.breadgrader" >
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="com.breadtech.breadinterface.BIActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name="com.breadtech.breadinterface.BIListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.SemesterListActivity"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.SemesterInfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.SettingsActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.CourseInfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.CourseListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.CriteriaListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.CriteriaInfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.AssignmentListActivity"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".ui.AssignmentInfoActivity"
+            android:label="@string/app_name" >
+        </activity>
+
+    </application>
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+
+</manifest>
